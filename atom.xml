@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cassolee.github.io/"/>
-  <updated>2018-06-12T02:49:47.507Z</updated>
+  <updated>2018-06-14T07:22:28.235Z</updated>
   <id>http://cassolee.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://cassolee.github.io/2018/06/14/test/"/>
+    <id>http://cassolee.github.io/2018/06/14/test/</id>
+    <published>2018-06-14T07:20:59.881Z</published>
+    <updated>2018-06-14T07:22:28.235Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>title: test<br>date: 2018-06-14 15:20:59<br>tags: [test标签]<br>—dubbo-x源码</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;title: test&lt;br&gt;date: 2018-06-14 15:20:59&lt;br&gt;tags: [test标签]&lt;br&gt;—dubbo-x源码&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>my-third-blog</title>
