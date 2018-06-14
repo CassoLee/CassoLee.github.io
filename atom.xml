@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superlee.wang/"/>
-  <updated>2018-06-14T07:22:28.235Z</updated>
+  <updated>2018-06-14T08:18:16.208Z</updated>
   <id>https://www.superlee.wang/</id>
   
   <author>
@@ -17,20 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://www.superlee.wang/2018/06/14/test/"/>
-    <id>https://www.superlee.wang/2018/06/14/test/</id>
-    <published>2018-06-14T07:20:59.881Z</published>
-    <updated>2018-06-14T07:22:28.235Z</updated>
+    <title>justTest</title>
+    <link href="https://www.superlee.wang/2018/06/14/justTest/"/>
+    <id>https://www.superlee.wang/2018/06/14/justTest/</id>
+    <published>2018-06-14T08:17:14.000Z</published>
+    <updated>2018-06-14T08:18:16.208Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title: test<br>date: 2018-06-14 15:20:59<br>tags: [test标签]<br>—dubbo-x源码</p>]]></content>
+    <content type="html"><![CDATA[<p>node</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;hr&gt;
-&lt;p&gt;title: test&lt;br&gt;date: 2018-06-14 15:20:59&lt;br&gt;tags: [test标签]&lt;br&gt;—dubbo-x源码&lt;/p&gt;
+        &lt;p&gt;node&lt;/p&gt;
 
       
     
