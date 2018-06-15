@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superlee.wang/"/>
-  <updated>2018-06-15T01:49:47.647Z</updated>
+  <updated>2018-06-15T01:57:43.756Z</updated>
   <id>https://www.superlee.wang/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hey</title>
+    <link href="https://www.superlee.wang/2018/06/15/hey/"/>
+    <id>https://www.superlee.wang/2018/06/15/hey/</id>
+    <published>2018-06-15T01:57:03.000Z</published>
+    <updated>2018-06-15T01:57:43.756Z</updated>
+    
+    <content type="html"><![CDATA[<p>hey<br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;hey&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="so" scheme="https://www.superlee.wang/tags/so/"/>
+    
+  </entry>
   
   <entry>
     <title>dubbo</title>
