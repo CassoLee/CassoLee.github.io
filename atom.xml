@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superlee.wang/"/>
-  <updated>2018-06-15T01:57:43.756Z</updated>
+  <updated>2018-06-15T02:09:28.412Z</updated>
   <id>https://www.superlee.wang/</id>
   
   <author>
@@ -17,70 +17,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hey</title>
-    <link href="https://www.superlee.wang/2018/06/15/hey/"/>
-    <id>https://www.superlee.wang/2018/06/15/hey/</id>
-    <published>2018-06-15T01:57:03.000Z</published>
-    <updated>2018-06-15T01:57:43.756Z</updated>
+    <title>ha</title>
+    <link href="https://www.superlee.wang/2018/06/15/ha/"/>
+    <id>https://www.superlee.wang/2018/06/15/ha/</id>
+    <published>2018-06-15T02:09:06.000Z</published>
+    <updated>2018-06-15T02:09:28.412Z</updated>
     
-    <content type="html"><![CDATA[<p>hey<br><a id="more"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;hey&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="so" scheme="https://www.superlee.wang/tags/so/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>dubbo</title>
-    <link href="https://www.superlee.wang/2018/06/15/da/"/>
-    <id>https://www.superlee.wang/2018/06/15/da/</id>
-    <published>2018-06-15T01:49:07.000Z</published>
-    <updated>2018-06-15T01:49:47.647Z</updated>
-    
-    <content type="html"><![CDATA[<p>dsdaasdasd</p>]]></content>
+    <content type="html"><![CDATA[<p>hey</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;dsdaasdasd&lt;/p&gt;
+        &lt;p&gt;hey&lt;/p&gt;
 
       
     
     </summary>
     
     
-      <category term="test" scheme="https://www.superlee.wang/tags/test/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>dubbo</title>
-    <link href="https://www.superlee.wang/2018/06/15/dubbo/"/>
-    <id>https://www.superlee.wang/2018/06/15/dubbo/</id>
-    <published>2018-06-15T01:49:07.000Z</published>
-    <updated>2018-06-15T01:50:28.710Z</updated>
-    
-    <content type="html"><![CDATA[<p>dubbo</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;dubbo&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="hi" scheme="https://www.superlee.wang/tags/hi/"/>
+      <category term="as" scheme="https://www.superlee.wang/tags/as/"/>
     
   </entry>
   
