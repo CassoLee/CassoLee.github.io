@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.superlee.wang/"/>
-  <updated>2018-06-29T12:05:35.704Z</updated>
+  <updated>2018-10-12T12:59:05.397Z</updated>
   <id>https://www.superlee.wang/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>拜占庭将军问题</title>
+    <link href="https://www.superlee.wang/2018/10/12/%E6%8B%9C%E5%8D%A0%E5%BA%AD%E5%B0%86%E5%86%9B%E9%97%AE%E9%A2%98/"/>
+    <id>https://www.superlee.wang/2018/10/12/拜占庭将军问题/</id>
+    <published>2018-10-12T12:59:05.000Z</published>
+    <updated>2018-10-12T12:59:05.397Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>工作量证明原理</title>
+    <link href="https://www.superlee.wang/2018/10/12/%E5%B7%A5%E4%BD%9C%E9%87%8F%E8%AF%81%E6%98%8E%E5%8E%9F%E7%90%86/"/>
+    <id>https://www.superlee.wang/2018/10/12/工作量证明原理/</id>
+    <published>2018-10-12T12:58:53.000Z</published>
+    <updated>2018-10-12T12:58:53.044Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>八皇后问题递归算法</title>
+    <link href="https://www.superlee.wang/2018/10/12/%E5%85%AB%E7%9A%87%E5%90%8E%E9%97%AE%E9%A2%98%E9%80%92%E5%BD%92%E7%AE%97%E6%B3%95/"/>
+    <id>https://www.superlee.wang/2018/10/12/八皇后问题递归算法/</id>
+    <published>2018-10-12T12:07:05.000Z</published>
+    <updated>2018-10-12T12:57:12.209Z</updated>
+    
+    <content type="html"><![CDATA[<p>八皇后问题的递归实现：</p><p>package com.woqu.payment.constant;</p><p>import java.util.ArrayList;<br>import java.util.List;</p><p>public class NQueenProblem {<br>    private static int n=8;//n皇后问题<br>    private static int total=0;//解法计数</p><pre><code>/** * 递归算法分析皇后可占位情况 * @param queen */public static void analyse(List&lt;Integer[]&gt; queen){    if(queen==null){        queen = new ArrayList&lt;Integer[]&gt;();    }    int length = queen.size();    boolean[] rank = render(queen);    Integer[] currentqueen={-1, -1};    for(int i=0; i&lt;n; i++){        if(rank[i]){//满足条件            currentqueen[0]=i;            currentqueen[1]=length;            queen.add(currentqueen);            if(length==n-1){//到达最后一行                total++;                print(queen);            }            else{                analyse(queen);//递归分析下一皇后的占位            }            queen.remove(currentqueen);//恢复上次递归时的占位状态        }    }}/** * 根据当前皇后占位情况返回下一行中皇后的可占位情况 * @param queen * @return */public static boolean[] render(List&lt;Integer[]&gt; queen){    boolean[] rank = new boolean[n];    for(int i=0; i&lt;n; i++){        rank[i]=true;    }    int y = 0;    if(queen!=null){        y = queen.size();    }    for(int x=0; x&lt;n; x++){        for(int i=0; i&lt;y; i++){            if(x==queen.get(i)[0]||                    x-queen.get(i)[0]==y-queen.get(i)[1]||                    x-queen.get(i)[0]==queen.get(i)[1]-y){                rank[x]=false;                break;            }        }    }    return rank;}/** * 占位可视化 * @param queen */public static void print(List&lt;Integer[]&gt; queen){    System.out.println(&quot;--------&quot;);    for(int y=0; y&lt;queen.size(); y++){        for(int x=0; x&lt;queen.size(); x++){            if(x==queen.get(y)[0] &amp;&amp; y== queen.get(y)[1]){                System.out.print(&quot;o &quot;);            }            else{                System.out.print(&quot;x &quot;);            }        }        System.out.println();    }    System.out.println(&quot;--------&quot;);}public static void main(String[] args) {    long time1 = System.currentTimeMillis();    NQueenProblem.n=8;    NQueenProblem.total=0;    analyse(null);    System.out.println(&quot;solutions: &quot;+total);    long time2 = System.currentTimeMillis();    System.out.println(&quot;spent time: &quot;+(time2-time1)+&quot;ms&quot;);}</code></pre><p>}</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;八皇后问题的递归实现：&lt;/p&gt;
+&lt;p&gt;package com.woqu.payment.constant;&lt;/p&gt;
+&lt;p&gt;import java.util.ArrayList;&lt;br&gt;import java.util.List;&lt;/p&gt;
+&lt;p&gt;public class NQ
+      
+    
+    </summary>
+    
+    
+      <category term="算法，递归" scheme="https://www.superlee.wang/tags/%E7%AE%97%E6%B3%95%EF%BC%8C%E9%80%92%E5%BD%92/"/>
+    
+  </entry>
   
   <entry>
     <title>支付系统开发过程中遇到的问题总结</title>
