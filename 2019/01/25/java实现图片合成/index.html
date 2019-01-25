@@ -1,13 +1,12 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="李超的个人博客"><meta name="keywords" content="个人博客"><title> | CassoLee</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.1"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.1"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">CassoLee</h1><a id="logo" href="/.">CassoLee</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="search"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title"></h1><div class="post-meta"><a href="/2019/01/25/java实现图片合成/#comments" class="comment-count"><i id="changyan_count_unit" data-xid="2019/01/25/java实现图片合成/"></i>留言,<i id="changyan_parti_unit" data-xid="2019/01/25/java实现图片合成/"></i>参与</a><p><span class="date">Jan 25, 2019</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>点击</i></i></span></p></div><div class="post-content"><hr>
-<p>title: java实现图片合成<br>date: 2019-01-25 14:23:08<br>tags:<br>package com.tourstock.marketing.utils.wish;<br>import java.awt.BasicStroke;<br>import java.awt.Color;<br>import java.awt.Font;<br>import java.awt.FontMetrics;<br>import java.awt.Graphics2D;<br>import java.awt.Shape;<br>import java.awt.geom.RoundRectangle2D;<br>import java.awt.image.BufferedImage;<br>import java.io.File;<br>import java.util.Hashtable;<br>import java.util.LinkedHashMap;<br>import java.util.Map;<br>import java.util.Map.Entry;</p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="李超的个人博客"><meta name="keywords" content="个人博客"><title>java实现图片合成 | CassoLee</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=2.0.1"><link rel="stylesheet" type="text/css" href="/css/highlight.css?v=2.0.1"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">java实现图片合成</h1><a id="logo" href="/.">CassoLee</a><p class="description"></p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="search"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">java实现图片合成</h1><div class="post-meta"><a href="/2019/01/25/java实现图片合成/#comments" class="comment-count"><i id="changyan_count_unit" data-xid="2019/01/25/java实现图片合成/"></i>留言,<i id="changyan_parti_unit" data-xid="2019/01/25/java实现图片合成/"></i>参与</a><p><span class="date">Jan 25, 2019</span><span><i id="busuanzi_container_page_pv"><i id="busuanzi_value_page_pv"></i><i>点击</i></i></span></p></div><div class="post-content"><p>package com.tourstock.marketing.utils.wish;<br>import java.awt.BasicStroke;<br>import java.awt.Color;<br>import java.awt.Font;<br>import java.awt.FontMetrics;<br>import java.awt.Graphics2D;<br>import java.awt.Shape;<br>import java.awt.geom.RoundRectangle2D;<br>import java.awt.image.BufferedImage;<br>import java.io.File;<br>import java.util.Hashtable;<br>import java.util.LinkedHashMap;<br>import java.util.Map;<br>import java.util.Map.Entry;</p>
 <p>import javax.imageio.ImageIO;</p>
 <p>import org.apache.log4j.Logger;</p>
-<p>import com.google.zxing.BarcodeFormat;<br>import com.google.zxing.EncodeHintType;<br>import com.google.zxing.MultiFormatWriter;<br>import com.google.zxing.WriterException;<br>import com.google.zxing.client.j2se.MatrixToImageWriter;<br>import com.google.zxing.common.BitMatrix;<br>import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;<br>import com.tourstock.common.util.Json; </p>
+<p>import com.google.zxing.BarcodeFormat;<br>import com.google.zxing.EncodeHintType;<br>import com.google.zxing.MultiFormatWriter;<br>import com.google.zxing.WriterException;<br>import com.google.zxing.client.j2se.MatrixToImageWriter;<br>import com.google.zxing.common.BitMatrix;<br>import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;<br>import com.tourstock.common.util.Json;</p>
 <p>/**</p>
 <ul>
-<li>二维码工具类</li>
-<li><p>*/<br>public class QRCodeUtil {<br> private static Logger logger = Logger.getLogger(QRCodeUtil.class);</p>
-<p> private static final String CHARSET = “utf-8”;<br> private static final String FORMAT_NAME = “JPG”; </p>
+<li><p>二维码工具类<br><em>
+</em>/<br>public class QRCodeUtil {<br> private static Logger logger = Logger.getLogger(QRCodeUtil.class);</p>
+<p> private static final String CHARSET = “utf-8”;<br> private static final String FORMAT_NAME = “JPG”;</p>
 <p> public static String GenarateImage(String content, ErrorCorrectionLevel level) throws Exception {</p>
 <pre><code>String topic = &quot;我有一个心愿&quot;;
 String words = &quot;旅游&quot;;
@@ -17,11 +16,11 @@ String sentence = &quot;我想带%s去%s&quot;;
 Map&lt;String,Object[]&gt; wishInfoMap = new LinkedHashMap&lt;String,Object[]&gt;();
 wishInfoMap.put(sentence, new String[] {partner, destination});
 wishInfoMap.put(words, new String[] {});
-wishInfoMap.put(&quot;&quot;, new String[] {topic});
+wishInfoMap.put(&quot;%s&quot;, new String[] {topic});
 
-String fileUrl = &quot;D:\\BaiduNetdiskDownload\\&quot; + &quot;lulutrip.jpg&quot;; 
-File file = new File(fileUrl); 
-BufferedImage bgp = ImageIO.read(file); 
+String fileUrl = &quot;D:\\BaiduNetdiskDownload\\&quot; + &quot;lulutrip.jpg&quot;;
+File file = new File(fileUrl);
+BufferedImage bgp = ImageIO.read(file);
 int bgpWidth = bgp.getWidth(null);
 int qrCodeSize = (int) (bgpWidth*0.35);
 BufferedImage qr = genarateQrCode(content, qrCodeSize, level);
@@ -35,31 +34,31 @@ ImageIO.write(bgp, FORMAT_NAME, new File(&quot;D:\\BaiduNetdiskDownload&quot;+&q
 return null;
 </code></pre><p> }</p>
 <p> public static BufferedImage genarateQrCode(String content, int qrCodeSize, ErrorCorrectionLevel level) throws WriterException{</p>
-<pre><code>Hashtable&lt;EncodeHintType, Object&gt; hints = new Hashtable&lt;EncodeHintType, Object&gt;(); 
-hints.put(EncodeHintType.ERROR_CORRECTION, level); 
-hints.put(EncodeHintType.CHARACTER_SET, CHARSET); 
-hints.put(EncodeHintType.MARGIN, 0); 
-BitMatrix bitMatrix = new MultiFormatWriter().encode(content, 
-        BarcodeFormat.QR_CODE, qrCodeSize, qrCodeSize, hints); 
+<pre><code>Hashtable&lt;EncodeHintType, Object&gt; hints = new Hashtable&lt;EncodeHintType, Object&gt;();
+hints.put(EncodeHintType.ERROR_CORRECTION, level);
+hints.put(EncodeHintType.CHARACTER_SET, CHARSET);
+hints.put(EncodeHintType.MARGIN, 0);
+BitMatrix bitMatrix = new MultiFormatWriter().encode(content,
+        BarcodeFormat.QR_CODE, qrCodeSize, qrCodeSize, hints);
 BufferedImage image = MatrixToImageWriter.toBufferedImage(bitMatrix);
 return image;
 </code></pre><p> }</p>
 </li>
 </ul>
-<pre><code>private static void insertImage(BufferedImage bgp, BufferedImage qr,Map&lt;String,Object[]&gt; wishInfoMap) throws Exception { 
-    if (qr==null) { 
-        logger.error(&quot;二维码图片不存在！&quot;); 
-        return; 
-    } 
-    int bgpWidth = bgp.getWidth(null); 
-    int bgpHeight = bgp.getHeight(null); 
-    // 插入二维码 
-    Graphics2D graph = bgp.createGraphics(); 
-    int QRCODE_X = (int) (bgpWidth*0.333); 
-    int QRCODE_Y = (int) (bgpHeight*0.557); 
-    graph.drawImage(qr, QRCODE_X, QRCODE_Y, qr.getWidth(null), qr.getWidth(null), null); 
-    Shape shape = new RoundRectangle2D.Float(QRCODE_X, QRCODE_Y, bgpWidth, bgpWidth, 6, 6); 
-    graph.setStroke(new BasicStroke(3f)); 
+<pre><code>private static void insertImage(BufferedImage bgp, BufferedImage qr,Map&lt;String,Object[]&gt; wishInfoMap) throws Exception {
+    if (qr==null) {
+        logger.error(&quot;二维码图片不存在！&quot;);
+        return;
+    }
+    int bgpWidth = bgp.getWidth(null);
+    int bgpHeight = bgp.getHeight(null);
+    // 插入二维码
+    Graphics2D graph = bgp.createGraphics();
+    int QRCODE_X = (int) (bgpWidth*0.333);
+    int QRCODE_Y = (int) (bgpHeight*0.557);
+    graph.drawImage(qr, QRCODE_X, QRCODE_Y, qr.getWidth(null), qr.getWidth(null), null);
+    Shape shape = new RoundRectangle2D.Float(QRCODE_X, QRCODE_Y, bgpWidth, bgpWidth, 6, 6);
+    graph.setStroke(new BasicStroke(3f));
     graph.draw(shape);
 
     //插入心愿信息
@@ -117,13 +116,13 @@ private static int drawWishInfo(Graphics2D graph, int bgpWidth, Integer wishInfo
 private static LinkedHashMap&lt;Integer, Integer&gt; getLineIndexMap(int lineWords, String wishInfo){
     LinkedHashMap&lt;Integer, Integer&gt; indexMap = new LinkedHashMap&lt;Integer, Integer&gt;();
     int len = wishInfo.length();
-    for(int i=len;i&gt;=0;i--) {
-        if(i%lineWords==0) {
-            int endIndex = i+lineWords-1;
+    for(int index=len-1;index&gt;=0;index--) {
+        if(index%lineWords==0) {
+            int endIndex = index+lineWords;
             if(endIndex &gt; len-1) {
                 endIndex = len-1;
             }
-            indexMap.put(i, endIndex);
+            indexMap.put(index, endIndex);
         }
     }
     return indexMap;
@@ -186,28 +185,28 @@ private static int getLineWords(Graphics2D graph, int bgpWidth) {
  * Email: mmm333zzz520@163.com
  * @date 2013-12-11 上午10:16:36
  * @param destPath 存放目录
- */ 
-public static void mkdirs(String destPath) { 
-    File file =new File(destPath);     
-    //当文件夹不存在时，mkdirs会自动创建多层目录，区别于mkdir．(mkdir如果父目录不存在则会抛出异常) 
-    if (!file.exists() &amp;&amp; !file.isDirectory()) { 
-        file.mkdirs(); 
-    } 
-} 
+ */
+public static void mkdirs(String destPath) {
+    File file =new File(destPath);
+    //当文件夹不存在时，mkdirs会自动创建多层目录，区别于mkdir．(mkdir如果父目录不存在则会抛出异常)
+    if (!file.exists() &amp;&amp; !file.isDirectory()) {
+        file.mkdirs();
+    }
+}
 
 
 
 
 
-public static void main(String[] args) throws Exception { 
-    String text = &quot;http://www.lulutrip.com&quot;; 
-    //        QRCodeUtil.createImage(text, new URL(&quot;http://www.quimg.com/m/logo/logo60x60.png&quot;), false); 
+public static void main(String[] args) throws Exception {
+    String text = &quot;http://www.lulutrip.com&quot;;
+    //        QRCodeUtil.createImage(text, new URL(&quot;http://www.quimg.com/m/logo/logo60x60.png&quot;), false);
     System.out.println(QRCodeUtil.GenarateImage(text,ErrorCorrectionLevel.M));
     //        String sentence = &quot;我想带%s去%s&quot;;
     //        Map&lt;String,Object[]&gt; wishInfoMap = new HashMap&lt;String,Object[]&gt;();
     //        wishInfoMap.put(sentence, new String[] {&quot;朋友&quot;, &quot;纽约&quot;});
     //        Map&lt;Integer, LinkedHashMap&lt;Integer, Integer&gt;&gt; map = getCriticalIndexMap(5, sentence, new String[] {&quot;朋友&quot;, &quot;纽约&quot;});
-</code></pre><p>//                        LinkedHashMap&lt;Integer, Integer&gt; m = getLineIndexMap(5, “我有一个心愿”);<br>        //        System.out.println(Json.toJson(map));<br>//                        System.out.println(Json.toJson(m));<br>    }<br>}—</p>
+</code></pre><p>//                        LinkedHashMap&lt;Integer, Integer&gt; m = getLineIndexMap(5, “我有一个心愿”);<br>        //        System.out.println(Json.toJson(map));<br>//                        System.out.println(Json.toJson(m));<br>    }<br>}</p>
 </div><div class="tags"></div><div class="post-share"><div class="bdsharebuttonbox"><span style="float:left;line-height: 28px;height: 28px;font-size:16px;font-weight:blod">分享到：</span><a href="#" data-cmd="more" class="bds_more"></a><a href="#" data-cmd="mshare" title="分享到一键分享" class="bds_mshare"></a><a href="#" data-cmd="fbook" title="分享到Facebook" class="bds_fbook"></a><a href="#" data-cmd="twi" title="分享到Twitter" class="bds_twi"></a><a href="#" data-cmd="linkedin" title="分享到linkedin" class="bds_linkedin"></a><a href="#" data-cmd="youdao" title="分享到有道云笔记" class="bds_youdao"></a><a href="#" data-cmd="evernotecn" title="分享到印象笔记" class="bds_evernotecn"></a><a href="#" data-cmd="weixin" title="分享到微信" class="bds_weixin"></a><a href="#" data-cmd="qzone" title="分享到QQ空间" class="bds_qzone"></a><a href="#" data-cmd="tsina" title="分享到新浪微博" class="bds_tsina"></a></div></div><div class="post-nav"><a href="/2018/12/29/spring-cloud-组件/" class="next">spring cloud 组件</a></div><div id="comments"><div id="SOHUCS" sid="2019/01/25/java实现图片合成/"></div></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/25/java实现图片合成/">java实现图片合成</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/29/spring-cloud-组件/">spring cloud 组件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/12/拜占庭将军问题/">拜占庭将军问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/12/工作量证明原理/">工作量证明原理</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/12/八皇后问题递归算法/">八皇后问题递归算法</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/29/支付系统开发过程中遇到的问题总结/">支付系统开发过程中遇到的问题总结</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/15/hey-man/">hey,man</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/11/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"><a href="/tags/哈哈/" style="font-size: 15px;">哈哈</a> <a href="/tags/SpringCloud/" style="font-size: 15px;">SpringCloud</a> <a href="/tags/算法，递归/" style="font-size: 15px;">算法，递归</a> <a href="/tags/开发问题总结/" style="font-size: 15px;">开发问题总结</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">六月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">六月 2016</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> 友情链接</i></div><ul></ul><a href="http://www.example1.com/" title="site-name1" target="_blank">site-name1</a><ul></ul><a href="http://www.example2.com/" title="site-name2" target="_blank">site-name2</a><ul></ul><a href="http://www.example3.com/" title="site-name3" target="_blank">site-name3</a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">Baidu Site Haritası</a> |  <a href="/atom.xml">订阅</a> |  <a href="/about/">关于</a></p><p>本站总访问量：<i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>次</p><p><span> Copyright &copy;<a href="/." rel="nofollow">Super Lee.</a></span><span> Theme by<a rel="nofollow" target="_blank" href="https://github.com/chaooo/hexo-theme-BlueLake"> BlueLake.</a></span><span> Count by<a href="http://busuanzi.ibruce.info/"> busuanzi.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><script type="text/javascript" src="/js/search.json.js?v=2.0.1"></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.1" async></script><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","weixin","tsina","qzone","linkedin","fbook","twi","print","renren","sqq","evernotecn","bdysc","tqq","tqf","bdxc","kaixin001","tieba","douban","bdhome","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","h163","copy"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["tsina","qzone","weixin","fbook","twi","linkedin","youdao","evernotecn","mshare"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","weixin","fbook","twi","linkedin","youdao","evernotecn","mshare"]}};with(document)0[(getElementsByTagName('head')[0]||head).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js'];
 </script><script>window._config = { showScore: true };
 (function(){ 
